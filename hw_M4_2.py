@@ -34,7 +34,6 @@ def insert_list(l_srt, l_uns) :
 	len_srt = len(l_srt)
 	len_uns = len(l_uns)
 
-#	for i in range(len_uns) :
 	for i in l_uns : 
 		j = find_pos(l_srt, i)
 		l_srt.insert(j, i)
@@ -46,10 +45,8 @@ l_sorted = [1, 4, 9, 13, 22]
 l_unsorted = [5, 9, 0, 2]
 
 #numbers_list = 'datafile4_1.json'
-
 #with open(numbers_list, 'w') as f:
 #	json.dump(l_srt,f)
-
 #with open(numbers_list, 'r') as f:
 #	l_srt = json.load(f)
 
@@ -58,5 +55,5 @@ print(' list of unsorted numbers : ', l_unsorted)
 
 insert_list(l_sorted, l_unsorted)
 
-print(' new list of sorted numbers : ', l_sorted)
+print(' new full list of sorted numbers : ', l_sorted)
 
